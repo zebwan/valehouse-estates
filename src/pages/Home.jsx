@@ -29,19 +29,19 @@ const approachItems = [
 const interiorHighlights = [
   {
     title: "Living Room",
-    image: "/valehouse-estates/valehouse-estates/img/interior-living-room.png",
+    image: "/valehouse-estates/img/interior-living-room.png",
   },
   {
     title: "Kitchen",
-    image: "/valehouse-estates/valehouse-estates/img/interior-kitchen.png",
+    image: "/valehouse-estates/img/interior-kitchen.png",
   },
   {
     title: "Bedroom",
-    image: "/valehouse-estates/valehouse-estates/img/interior-bedroom.png",
+    image: "/valehouse-estates/img/interior-bedroom.png",
   },
   {
     title: "Bathroom",
-    image: "/valehouse-estates/valehouse-estates/img/interior-bathroom.png",
+    image: "/valehouse-estates/img/interior-bathroom.png",
   },
 ];
 
@@ -49,17 +49,17 @@ const neighbourhoods = [
   {
     title: "City",
     text: "Refined residences close to culture, dining, work, and private amenities.",
-    image: "/valehouse-estates/valehouse-estates/img/neighbourhood-city.png",
+    image: "/valehouse-estates/img/neighbourhood-city.png",
   },
   {
     title: "Coast",
     text: "Quiet addresses shaped by light, openness, and slower everyday rituals.",
-    image: "/valehouse-estates/valehouse-estates/img/neighbourhood-coastal.png",
+    image: "/valehouse-estates/img/neighbourhood-coastal.png",
   },
   {
     title: "Hillside",
     text: "Private homes surrounded by elevation, greenery, and a deeper sense of retreat.",
-    image: "/valehouse-estates/valehouse-estates/img/neighbourhood-hillside.png",
+    image: "/valehouse-estates/img/neighbourhood-hillside.png",
   },
 ];
 
@@ -71,11 +71,11 @@ function Home() {
       <section className="home-hero">
         <picture className="home-hero-media">
           <source
-            srcSet="/valehouse-estates/valehouse-estates/img/hero-residence-mobile.png"
+            srcSet="/valehouse-estates/img/hero-residence-mobile.png"
             media="(max-width: 768px)"
           />
           <img
-            src="/valehouse-estates/valehouse-estates/img/hero-residence.png"
+            src="/valehouse-estates/img/hero-residence.png"
             alt="Minimal luxury residence surrounded by warm natural light"
           />
         </picture>
@@ -134,7 +134,7 @@ function Home() {
         <div className="container about-preview-grid">
           <div className="about-preview-image">
             <img
-              src="/valehouse-estates/valehouse-estates/img/about-studio.png"
+              src="/valehouse-estates/img/about-studio.png"
               alt="Editorial interior of a refined real estate studio"
             />
           </div>
@@ -232,7 +232,7 @@ function Home() {
       </section>
 
       <CTASection
-        image="/valehouse-estates/valehouse-estates/img/cta-quiet-home.png"
+        image="/valehouse-estates/img/cta-quiet-home.png"
         title="Let us help you find a quieter kind of home."
         text="Share what you are looking for and we will respond with a considered selection shaped around your priorities."
         buttonText="Start a Private Enquiry"
