@@ -7,12 +7,12 @@ const valueSections = [
   {
     title: "Our Philosophy",
     text: "We believe a home should feel composed before it feels impressive. Our work begins with proportion, light, privacy, and the quiet details that shape daily living.",
-    image: "/valehouse-estates/img/about-architecture-detail.png",
+    image: "/valehouse-estates/valehouse-estates/img/about-architecture-detail.png",
   },
   {
     title: "Private Advisory",
     text: "Every search is handled with discretion and clarity. We help clients understand what matters, what can be overlooked, and what should be considered carefully before moving forward.",
-    image: "/valehouse-estates/img/about-consultation.png",
+    image: "/valehouse-estates/valehouse-estates/img/about-consultation.png",
   },
 ];
 
@@ -22,7 +22,7 @@ function About() {
       <section className="about-hero">
         <div className="about-hero-media">
           <img
-            src="/valehouse-estates/img/about-studio.png"
+            src="/valehouse-estates/valehouse-estates/img/about-studio.png"
             alt="Quiet luxury property studio interior"
           />
         </div>
@@ -138,7 +138,7 @@ function About() {
       </section>
 
       <CTASection
-        image="/valehouse-estates/img/cta-quiet-home.png"
+        image="/valehouse-estates/valehouse-estates/img/cta-quiet-home.png"
         eyebrow="Private Enquiry"
         title="Start with a quieter conversation."
         text="Tell us what you are looking for and we will respond with a considered direction, not a crowded list."
