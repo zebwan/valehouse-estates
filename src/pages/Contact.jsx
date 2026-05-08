@@ -58,7 +58,7 @@ function Contact() {
         <div className="container contact-grid">
           <div className="contact-image">
             <img
-              src="/img/contact-residence-entry.png"
+              src="/valehouse-estates/img/contact-residence-entry.png"
               alt="Private residence entrance with warm lighting"
             />
           </div>

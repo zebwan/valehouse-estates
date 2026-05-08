@@ -8,21 +8,21 @@ const neighbourhoodSections = [
     label: "01",
     title: "City Living",
     text: "For those who value access without giving up calm. Our city residences are selected around culture, dining, business districts, private amenities, and neighbourhoods that hold long-term relevance.",
-    image: "/img/neighbourhood-city.png",
+    image: "/valehouse-estates/img/neighbourhood-city.png",
     points: ["Cultural access", "Private amenities", "Walkable convenience"],
   },
   {
     label: "02",
     title: "Coastal Calm",
     text: "Homes shaped by light, openness, and slower rituals. Coastal addresses offer a softer pace, with residences chosen for privacy, atmosphere, and a stronger connection to the surrounding landscape.",
-    image: "/img/neighbourhood-coastal.png",
+    image: "/valehouse-estates/img/neighbourhood-coastal.png",
     points: ["Open views", "Slower daily rhythm", "Natural light"],
   },
   {
     label: "03",
     title: "Hillside Privacy",
     text: "Elevated homes with a deeper sense of retreat. Hillside residences are chosen for privacy, greenery, architectural presence, and the quiet separation they offer from the pace below.",
-    image: "/img/neighbourhood-hillside.png",
+    image: "/valehouse-estates/img/neighbourhood-hillside.png",
     points: ["Elevated setting", "Stronger privacy", "Green surroundings"],
   },
 ];
@@ -111,7 +111,7 @@ function Neighbourhoods() {
       </section>
 
       <CTASection
-        image="/img/cta-quiet-home.png"
+        image="/valehouse-estates/img/cta-quiet-home.png"
         eyebrow="Private Search"
         title="Find the setting that fits the way you live."
         text="Tell us the kind of place you are drawn to and we will help refine the search with care."
