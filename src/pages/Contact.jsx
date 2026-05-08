@@ -1,3 +1,4 @@
+import { imagePath } from "../utils/imagePath";
 import { useState } from "react";
 import "./Contact.css";
 
@@ -58,7 +59,7 @@ function Contact() {
         <div className="container contact-grid">
           <div className="contact-image">
             <img
-              src="/valehouse-estates/img/contact-residence-entry.png"
+              src={imagePath("contact-residence-entry.png")}
               alt="Private residence entrance with warm lighting"
             />
           </div>

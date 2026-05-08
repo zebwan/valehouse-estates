@@ -1,3 +1,4 @@
+import { imagePath } from "../utils/imagePath";
 import { Link } from "react-router-dom";
 
 import PropertyCard from "../components/PropertyCard";
@@ -29,19 +30,19 @@ const approachItems = [
 const interiorHighlights = [
   {
     title: "Living Room",
-    image: "/valehouse-estates/img/interior-living-room.png",
+    image: imagePath("interior-living-room.png"),
   },
   {
     title: "Kitchen",
-    image: "/valehouse-estates/img/interior-kitchen.png",
+    image: imagePath("interior-kitchen.png"),
   },
   {
     title: "Bedroom",
-    image: "/valehouse-estates/img/interior-bedroom.png",
+    image: imagePath("interior-bedroom.png"),
   },
   {
     title: "Bathroom",
-    image: "/valehouse-estates/img/interior-bathroom.png",
+    image: imagePath("interior-bathroom.png"),
   },
 ];
 
@@ -49,17 +50,17 @@ const neighbourhoods = [
   {
     title: "City",
     text: "Refined residences close to culture, dining, work, and private amenities.",
-    image: "/valehouse-estates/img/neighbourhood-city.png",
+    image: imagePath("neighbourhood-city.png"),
   },
   {
     title: "Coast",
     text: "Quiet addresses shaped by light, openness, and slower everyday rituals.",
-    image: "/valehouse-estates/img/neighbourhood-coastal.png",
+    image: imagePath("neighbourhood-coastal.png"),
   },
   {
     title: "Hillside",
     text: "Private homes surrounded by elevation, greenery, and a deeper sense of retreat.",
-    image: "/valehouse-estates/img/neighbourhood-hillside.png",
+    image: imagePath("neighbourhood-hillside.png"),
   },
 ];
 
@@ -71,11 +72,11 @@ function Home() {
       <section className="home-hero">
         <picture className="home-hero-media">
           <source
-            srcSet="/valehouse-estates/img/hero-residence-mobile.png"
+            srcSet={imagePath("hero-residence-mobile.png")}
             media="(max-width: 768px)"
           />
           <img
-            src="/valehouse-estates/img/hero-residence.png"
+            src={imagePath("hero-residence.png")}
             alt="Minimal luxury residence surrounded by warm natural light"
           />
         </picture>
@@ -134,7 +135,7 @@ function Home() {
         <div className="container about-preview-grid">
           <div className="about-preview-image">
             <img
-              src="/valehouse-estates/img/about-studio.png"
+              src={imagePath("about-studio.png")}
               alt="Editorial interior of a refined real estate studio"
             />
           </div>
@@ -232,7 +233,7 @@ function Home() {
       </section>
 
       <CTASection
-        image="/valehouse-estates/img/cta-quiet-home.png"
+        image={imagePath("cta-quiet-home.png")}
         title="Let us help you find a quieter kind of home."
         text="Share what you are looking for and we will respond with a considered selection shaped around your priorities."
         buttonText="Start a Private Enquiry"
