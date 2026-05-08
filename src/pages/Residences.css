@@ -1,0 +1,177 @@
+.residences-page {
+  background-color: var(--color-ivory);
+}
+
+/* Page Hero */
+
+.residences-hero {
+  padding-top: 170px;
+  padding-bottom: 96px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(238, 228, 214, 0.74) 0%,
+      rgba(248, 243, 235, 1) 100%
+    );
+}
+
+.residences-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.65fr);
+  gap: clamp(34px, 7vw, 96px);
+  align-items: end;
+}
+
+.residences-hero h1 {
+  max-width: 860px;
+}
+
+.residences-hero p {
+  max-width: 560px;
+  margin-bottom: 10px;
+  font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+  line-height: 1.8;
+  color: rgba(25, 24, 23, 0.68);
+}
+
+/* Listing Section */
+
+.residences-listing {
+  padding-top: 88px;
+}
+
+.residences-listing-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 38px;
+  margin-bottom: 42px;
+}
+
+.residences-listing-header .section-intro {
+  margin-bottom: 0;
+}
+
+.residences-count {
+  flex: 0 0 auto;
+  min-width: 150px;
+  padding: 22px;
+  border: 1px solid var(--color-border);
+  background-color: rgba(238, 228, 214, 0.42);
+}
+
+.residences-count span {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--color-charcoal);
+}
+
+.residences-count p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: rgba(25, 24, 23, 0.58);
+}
+
+/* Filters */
+
+.property-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.property-filter {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: rgba(25, 24, 23, 0.68);
+  background-color: transparent;
+  transition:
+    color var(--transition-smooth),
+    background-color var(--transition-smooth),
+    border-color var(--transition-smooth),
+    transform var(--transition-smooth);
+}
+
+.property-filter:hover {
+  color: var(--color-charcoal);
+  border-color: rgba(25, 24, 23, 0.3);
+  transform: translateY(-2px);
+}
+
+.property-filter-active {
+  color: var(--color-ivory);
+  border-color: var(--color-charcoal);
+  background-color: var(--color-charcoal);
+}
+
+/* Grid */
+
+.residences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .residences-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .residences-listing-header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .residences-count {
+    width: 100%;
+  }
+
+  .residences-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .residences-hero {
+    padding-top: 132px;
+    padding-bottom: 72px;
+  }
+
+  .residences-listing {
+    padding-top: 68px;
+  }
+
+  .property-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .property-filter {
+    width: 100%;
+  }
+
+  .residences-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .property-filters {
+    grid-template-columns: 1fr;
+  }
+}

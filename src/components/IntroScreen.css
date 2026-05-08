@@ -1,0 +1,154 @@
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: var(--color-charcoal);
+  background:
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.34), transparent 42%),
+    var(--color-ivory);
+  overflow: hidden;
+}
+
+.intro-screen::before,
+.intro-screen::after {
+  content: "";
+  position: absolute;
+  width: 34vw;
+  height: 34vw;
+  border-radius: 50%;
+  background-color: rgba(168, 139, 88, 0.06);
+  filter: blur(12px);
+}
+
+.intro-screen::before {
+  top: -14vw;
+  left: -10vw;
+}
+
+.intro-screen::after {
+  right: -12vw;
+  bottom: -16vw;
+}
+
+.intro-screen-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  animation: introContentEnter 1.15s ease both;
+}
+
+.intro-kicker {
+  margin-bottom: 18px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-muted-gold);
+  opacity: 0;
+  animation: introFadeUp 0.85s ease 0.15s both;
+}
+
+.intro-screen h1 {
+  font-size: clamp(3rem, 8vw, 7.2rem);
+  letter-spacing: -0.055em;
+  color: var(--color-charcoal);
+  opacity: 0;
+  animation: introFadeUp 0.95s ease 0.35s both;
+}
+
+.intro-line {
+  width: min(280px, 56vw);
+  height: 1px;
+  margin: 28px 0 22px;
+  background-color: rgba(25, 24, 23, 0.28);
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: introLineReveal 1.05s ease 0.85s both;
+}
+
+.intro-tagline {
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  letter-spacing: 0.02em;
+  color: rgba(25, 24, 23, 0.68);
+  opacity: 0;
+  animation: introFadeUp 0.85s ease 1.05s both;
+}
+
+.intro-screen-leaving {
+  pointer-events: none;
+  animation: introLeave 0.65s ease both;
+}
+
+@keyframes introContentEnter {
+  from {
+    transform: translateY(10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes introFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes introLineReveal {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes introLeave {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-screen,
+  .intro-screen-content,
+  .intro-kicker,
+  .intro-screen h1,
+  .intro-line,
+  .intro-tagline,
+  .intro-screen-leaving {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-screen h1 {
+    max-width: 7ch;
+  }
+
+  .intro-line {
+    margin-block: 24px 20px;
+  }
+}

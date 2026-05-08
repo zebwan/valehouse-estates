@@ -1,0 +1,48 @@
+.section-intro {
+  display: grid;
+  gap: 22px;
+  margin-bottom: 54px;
+}
+
+.section-intro h2 {
+  max-width: 860px;
+}
+
+.section-intro .lead {
+  max-width: 690px;
+}
+
+.section-intro-center {
+  justify-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.section-intro-center h2,
+.section-intro-center .lead {
+  margin-inline: auto;
+}
+
+.section-intro-right {
+  justify-items: end;
+  text-align: right;
+}
+
+.section-intro-right h2,
+.section-intro-right .lead {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .section-intro,
+  .section-intro-right {
+    justify-items: start;
+    text-align: left;
+    margin-bottom: 38px;
+  }
+
+  .section-intro-center {
+    justify-items: center;
+    text-align: center;
+  }
+}
